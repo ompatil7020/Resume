@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Om Vishnu Patil - Resume</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #eef2ff, #f8fafc);
+      padding: 40px 20px;
+      color: #1e293b;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #ffffff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    .header {
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      color: white;
+      padding: 40px 35px;
+    }
+
+    .name {
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .role {
+      font-size: 16px;
+      opacity: 0.95;
+      margin-bottom: 18px;
+    }
+
+    .contact-info {
+      font-size: 14px;
+      line-height: 2;
+    }
+
+    .contact-info a {
+      color: #dbeafe;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .contact-info a:hover {
+      color: white;
+    }
+
+    .content {
+      padding: 35px;
+    }
+
+    h2 {
+      font-size: 17px;
+      text-transform: uppercase;
+      color: #1e3a8a;
+      margin-bottom: 16px;
+      margin-top: 28px;
+      position: relative;
+      padding-left: 14px;
+      letter-spacing: 1px;
+    }
+
+    h2::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 5px;
+      height: 18px;
+      background: #2563eb;
+      border-radius: 10px;
+    }
+
+    .edu-block,
+    .project-block {
+      background: #f8fafc;
+      padding: 18px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      border: 1px solid #e2e8f0;
+      transition: transform 0.2s ease;
+    }
+
+    .edu-block:hover,
+    .project-block:hover {
+      transform: translateY(-2px);
+    }
+
+    .school-name,
+    .project-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+
+    .degree {
+      font-size: 14px;
+      color: #475569;
+    }
+
+    .year-grade {
+      font-size: 13px;
+      color: #64748b;
+      margin-top: 5px;
+    }
+
+    .project-block p {
+      font-size: 14px;
+      color: #475569;
+      line-height: 1.7;
+      margin-top: 8px;
+    }
+
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 12px;
+      margin-top: 10px;
+      border: 1px solid #dbeafe;
+    }
+
+    .skills-table td {
+      padding: 14px;
+      font-size: 14px;
+      border: 1px solid #e2e8f0;
+    }
+
+    .skills-table td:first-child {
+      width: 30%;
+      background: #dbeafe;
+      color: #1e3a8a;
+      font-weight: 700;
+    }
+
+    .achieve-list {
+      padding-left: 22px;
+      color: #475569;
+      line-height: 2;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        padding: 30px 22px;
+      }
+
+      .content {
+        padding: 25px 20px;
+      }
+
+      .name {
+        font-size: 28px;
+      }
+
+      .skills-table td {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+
+    <div class="name">Om Vishnu Patil</div>
+    <div class="role">Computer Science Engineering Student</div>
+
+    <div class="contact-info">
+      📞 +91-7020796534 &nbsp;|&nbsp;
+      ✉ <a href="mailto:ompatil485902@gmail.com">ompatil485902@gmail.com</a> &nbsp;|&nbsp;
+      <a href="https://www.linkedin.com/in/om-patil-4190293ab" target="_blank">LinkedIn</a> &nbsp;|&nbsp;
+      <a href="https://github.com/ompatil7020" target="_blank">GitHub</a>
+    </div>
+
+    </div>
+
+    <div class="content">
+
+    <h2>Education</h2>
+
+    <div class="edu-block">
+      <div class="school-name">Nagpur Institute of Technology, Nagpur</div>
+      <div class="degree">B.Tech in Computer Science Engineering</div>
+      <div class="year-grade">2025 – 2029 &nbsp;|&nbsp; SGPA: 6.8 / 10</div>
+    </div>
+
+    <div class="edu-block">
+      <div class="school-name">Shri Shivaji Junior College, Mehkar</div>
+      <div class="degree">HSC</div>
+      <div class="year-grade">2025 &nbsp;|&nbsp; 69.50%</div>
+    </div>
+
+    <div class="edu-block">
+      <div class="school-name">Madan Waman Paturkar Mahavidyalay, Dongaon</div>
+      <div class="degree">SSC</div>
+      <div class="year-grade">2023 &nbsp;|&nbsp; 66.60%</div>
+    </div>
+
+    <h2>Technical Skills</h2>
+
+    <table class="skills-table">
+      <tr>
+        <td>Programming</td>
+        <td>C, Python, HTML, CSS</td>
+      </tr>
+      <tr>
+        <td>Tools</td>
+        <td>VS Code, MS Excel, Canva, GitHub</td>
+      </tr>
+      <tr>
+        <td>Concepts</td>
+        <td>AI Automation, Problem Solving, Web Development</td>
+      </tr>
+    </table>
+
+    <h2>Projects</h2>
+
+    <div class="project-block">
+      <div class="project-title">Personal Resume Website</div>
+      <p>Developed a responsive personal resume website using HTML and CSS to showcase education, skills, and projects in a professional format.</p>
+    </div>
+
+    <div class="project-block">
+      <div class="project-title">AI Assistant with AI Agent Automation</div>
+      <p>Built an AI-powered desktop assistant using Python, Groq API, and ElevenLabs API with automation features like system control, app handling, voice commands, browser automation, and smart task execution.</p>
+    </div>
+
+    <h2>Achievements</h2>
+
+    <ul class="achieve-list">
+      <li>Participated in a Hackathon in 2026</li>
+      <li>Actively learning AI automation and software development</li>
+    </ul>
+
+  </div>
+
+  </div>
+
+</body>
+</html>
