@@ -4,214 +4,59 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Om Vishnu Patil - Resume</title>
-
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #eef2ff, #f8fafc);
-      padding: 40px 20px;
-      color: #1e293b;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      background: #ffffff;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
-    }
-
-    .header {
-      background: linear-gradient(135deg, #2563eb, #1e40af);
-      color: white;
-      padding: 40px 35px;
-    }
-
-    .name {
-      font-size: 36px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      margin-bottom: 8px;
-    }
-
-    .role {
-      font-size: 16px;
-      opacity: 0.95;
-      margin-bottom: 18px;
-    }
-
-    .contact-info {
-      font-size: 14px;
-      line-height: 2;
-    }
-
-    .contact-info a {
-      color: #dbeafe;
-      text-decoration: none;
-      transition: 0.3s ease;
-    }
-
-    .contact-info a:hover {
-      color: white;
-    }
-
-    .content {
-      padding: 35px;
-    }
-
-    h2 {
-      font-size: 17px;
-      text-transform: uppercase;
-      color: #1e3a8a;
-      margin-bottom: 16px;
-      margin-top: 28px;
-      position: relative;
-      padding-left: 14px;
-      letter-spacing: 1px;
-    }
-
-    h2::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 2px;
-      width: 5px;
-      height: 18px;
-      background: #2563eb;
-      border-radius: 10px;
-    }
-
-    .edu-block,
-    .project-block {
-      background: #f8fafc;
-      padding: 18px;
-      border-radius: 12px;
-      margin-bottom: 16px;
-      border: 1px solid #e2e8f0;
-      transition: transform 0.2s ease;
-    }
-
-    .edu-block:hover,
-    .project-block:hover {
-      transform: translateY(-2px);
-    }
-
-    .school-name,
-    .project-title {
-      font-size: 16px;
-      font-weight: 700;
-      color: #0f172a;
-      margin-bottom: 6px;
-    }
-
-    .degree {
-      font-size: 14px;
-      color: #475569;
-    }
-
-    .year-grade {
-      font-size: 13px;
-      color: #64748b;
-      margin-top: 5px;
-    }
-
-    .project-block p {
-      font-size: 14px;
-      color: #475569;
-      line-height: 1.7;
-      margin-top: 8px;
-    }
-
-    .skills-table {
-      width: 100%;
-      border-collapse: collapse;
-      overflow: hidden;
-      border-radius: 12px;
-      margin-top: 10px;
-      border: 1px solid #dbeafe;
-    }
-
-    .skills-table td {
-      padding: 14px;
-      font-size: 14px;
-      border: 1px solid #e2e8f0;
-    }
-
-    .skills-table td:first-child {
-      width: 30%;
-      background: #dbeafe;
-      color: #1e3a8a;
-      font-weight: 700;
-    }
-
-    .achieve-list {
-      padding-left: 22px;
-      color: #475569;
-      line-height: 2;
-      font-size: 14px;
-    }
-
-    @media (max-width: 768px) {
-      .header {
-        padding: 30px 22px;
-      }
-
-      .content {
-        padding: 25px 20px;
-      }
-
-      .name {
-        font-size: 28px;
-      }
-
-      .skills-table td {
-        font-size: 13px;
-      }
-    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#eef2ff,#f8fafc);padding:40px 20px;color:#1e293b}
+    .container{max-width:900px;margin:auto;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 15px 40px rgba(0,0,0,.08)}
+    .header{background:linear-gradient(135deg,#2563eb,#1e40af);color:#fff;padding:40px 35px}
+    .name{font-size:36px;font-weight:700;letter-spacing:1px;margin-bottom:8px}
+    .role{font-size:16px;opacity:.95;margin-bottom:18px}
+    .contact-info{font-size:14px;line-height:2}
+    .contact-info a{color:#dbeafe;text-decoration:none}
+    .contact-info a:hover{color:#fff}
+    .content{padding:35px}
+    h2{font-size:17px;text-transform:uppercase;color:#1e3a8a;margin-bottom:16px;margin-top:28px;position:relative;padding-left:14px;letter-spacing:1px}
+    h2::before{content:"";position:absolute;left:0;top:2px;width:5px;height:18px;background:#2563eb;border-radius:10px}
+    .edu-block,.project-block,.cert-block{background:#f8fafc;padding:18px;border-radius:12px;margin-bottom:16px;border:1px solid #e2e8f0}
+    .school-name,.project-title,.cert-title{font-size:16px;font-weight:700;color:#0f172a;margin-bottom:6px}
+    .degree{font-size:14px;color:#475569}
+    .year-grade,.cert-meta{font-size:13px;color:#64748b;margin-top:5px}
+    .project-block p{font-size:14px;color:#475569;line-height:1.7;margin-top:8px}
+    .skills-table{width:100%;border-collapse:collapse;border-radius:12px;margin-top:10px;border:1px solid #dbeafe}
+    .skills-table td{padding:14px;font-size:14px;border:1px solid #e2e8f0}
+    .skills-table td:first-child{width:30%;background:#dbeafe;color:#1e3a8a;font-weight:700}
+    .achieve-list{padding-left:22px;color:#475569;line-height:2;font-size:14px}
+    @media(max-width:768px){body{padding:20px 10px}.header{padding:30px 22px}.content{padding:25px 20px}.name{font-size:28px}.skills-table td{font-size:13px}.contact-info{font-size:13px}}
   </style>
 </head>
 <body>
+<div class="container">
 
-  <div class="container">
-
-    <div class="header">
-
+  <div class="header">
     <div class="name">Om Vishnu Patil</div>
     <div class="role">Computer Science Engineering Student</div>
-
     <div class="contact-info">
       📞 +91-7020796534 &nbsp;|&nbsp;
       ✉ <a href="mailto:ompatil485902@gmail.com">ompatil485902@gmail.com</a> &nbsp;|&nbsp;
-      <a href="https://www.linkedin.com/in/om-patil-4190293ab" target="_blank">LinkedIn</a> &nbsp;|&nbsp;
-      <a href="https://github.com/ompatil7020" target="_blank">GitHub</a> &nbsp;|&nbsp;
-      <a href="https://leetcode.com/u/om_patil_7020/" target="_blank">LeetCode</a>
+      <a href="https://www.linkedin.com/in/om-patil-4190293ab" target="_blank" rel="noopener">LinkedIn</a> &nbsp;|&nbsp;
+      <a href="https://github.com/ompatil7020" target="_blank" rel="noopener">GitHub</a> &nbsp;|&nbsp;
+      <a href="https://leetcode.com/u/om_patil_7020/" target="_blank" rel="noopener">LeetCode</a>
     </div>
+  </div>
 
-    </div>
-
-    <div class="content">
+  <div class="content">
 
     <h2>Education</h2>
-
     <div class="edu-block">
       <div class="school-name">Nagpur Institute of Technology, Nagpur</div>
       <div class="degree">B.Tech in Computer Science Engineering</div>
       <div class="year-grade">2025 – 2029 &nbsp;|&nbsp; SGPA: 6.8 / 10</div>
     </div>
-
     <div class="edu-block">
       <div class="school-name">Shri Shivaji Junior College, Mehkar</div>
       <div class="degree">HSC</div>
       <div class="year-grade">2025 &nbsp;|&nbsp; 69.50%</div>
     </div>
-
     <div class="edu-block">
       <div class="school-name">Madan Waman Paturkar Mahavidyalay, Dongaon</div>
       <div class="degree">SSC</div>
@@ -219,20 +64,11 @@
     </div>
 
     <h2>Technical Skills</h2>
-
     <table class="skills-table">
-      <tr>
-        <td>Programming</td>
-        <td>C, Python, HTML, CSS</td>
-      </tr>
-      <tr>
-        <td>Tools</td>
-        <td>VS Code, MS Excel, Canva, GitHub</td>
-      </tr>
-      <tr>
-        <td>Concepts</td>
-        <td>AI Automation, Problem Solving, Web Development</td>
-      </tr>
+      <tr><td>Programming</td><td>C, Python, HTML, CSS</td></tr>
+      <tr><td>Tools</td><td>VS Code, MS Excel, Canva, GitHub</td></tr>
+      <tr><td>AI & APIs</td><td>Groq API, ElevenLabs API, Edge-TTS</td></tr>
+      <tr><td>Concepts</td><td>AI Automation, Problem Solving, Web Development, Voice Automation</td></tr>
     </table>
 
     <h2>Projects</h2>
@@ -241,24 +77,53 @@
       <div class="project-title">Nexa AI Desktop Assistant</div>
       <p>
         Developed an AI-powered desktop assistant using Python and PyQt5 with advanced voice interaction and automation features.
-        Integrated Groq API, ElevenLabs API, Edge-TTS, OCR-based screen analysis, smart memory handling, system control, browser automation, and file analysis capabilities.
-        Designed a futuristic desktop interface with real-time voice communication and task automation.
+        Integrated Groq API, ElevenLabs API, Edge-TTS, OCR-based screen analysis, smart memory handling, system control,
+        browser automation, and file analysis capabilities. Designed a futuristic desktop interface with real-time voice
+        communication and task automation.
       </p>
+    </div>
+
+    <div class="project-block">
+      <div class="project-title">StudyFlow – Student Study Management Platform</div>
+      <p>
+        Developed a student productivity and study management web application with authentication and a modern dashboard.
+        Implemented study planning, subjects, exams, assignments, attendance, timetable, Pomodoro, flashcards, goals,
+        progress tracking, and Notes Vault for organizing study resources.
       </p>
     </div>
 
     <div class="project-block">
       <div class="project-title">Personal Resume Website</div>
       <p>
-        Developed a responsive personal resume website using HTML and CSS with modern UI design to showcase education, skills, certifications, and technical projects.
-      </p>
+        Developed a responsive personal resume website using HTML and CSS with modern UI design to showcase education,
+        skills, certifications, projects, and professional profiles.
       </p>
     </div>
 
-    
+    <h2>Certifications</h2>
 
-    <h2>Certifications & Participation</h2>
+    <div class="cert-block">
+      <div class="cert-title">Data Science Master Virtual Internship</div>
+      <div class="cert-meta">AICTE – EduSkills &nbsp;|&nbsp; 8 Weeks &nbsp;|&nbsp; 2026</div>
+    </div>
+    <div class="cert-block">
+      <div class="cert-title">GenAI Powered Data Analytics Job Simulation</div>
+      <div class="cert-meta">Tata & Forage &nbsp;|&nbsp; 2026</div>
+    </div>
+    <div class="cert-block">
+      <div class="cert-title">Cyber Job Simulation</div>
+      <div class="cert-meta">Deloitte & Forage &nbsp;|&nbsp; 2026</div>
+    </div>
+    <div class="cert-block">
+      <div class="cert-title">TCS iON Career Edge – AI Foundation</div>
+      <div class="cert-meta">TCS iON &nbsp;|&nbsp; 2026</div>
+    </div>
+    <div class="cert-block">
+      <div class="cert-title">Data Analytics Essentials</div>
+      <div class="cert-meta">Cisco Networking Academy &nbsp;|&nbsp; 2026</div>
+    </div>
 
+    <h2>Participation & Activities</h2>
     <ul class="achieve-list">
       <li>Participated in Rising India Hackathon 1.0 at Nagpur Institute of Technology</li>
       <li>Participated in ESTIC2025 National Innovation Quiz</li>
@@ -268,12 +133,7 @@
       <li>Participated in Modelthon 1.0 – Model Making Competition</li>
     </ul>
 
-    <h2>Achievements</h2>
-
-    <ul class="achieve-list">
-      <li>Participated in a Hackathon in 2026</li>
-      <li>Actively learning AI automation and software development</li>
-    </ul>
-
+  </div>
+</div>
 </body>
 </html>
